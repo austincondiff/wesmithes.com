@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #435176;
+    background-color: #E5E6EA;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 0;
+}
+
+.logo {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background: #FFFFFF;
+    padding: 40px;
+    border-radius: 0;
+    border-top: 4px solid #9B865D;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+.highlight {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #E5E6EA;
+}
+
+.tagline {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #435176;
+    font-style: italic;
+}
+
+.service-area {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #E5E6EA;
+}
+
+.service-area h2 {
+    font-size: 1.1rem;
+    color: #435176;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.counties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    list-style: none;
+}
+
+.counties li {
+    background: #E5E6EA;
+    padding: 12px 16px;
+    text-align: center;
+    border-left: 3px solid #9B865D;
+    font-weight: 500;
+}
+
+.about p {
+    font-size: 1.05rem;
+    color: #435176;
+}
+
+.contact {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid #E5E6EA;
+}
+
+.contact h2 {
+    font-size: 1.3rem;
+    color: #9B865D;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.contact a {
+    color: #9B865D;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact a:hover {
+    color: #435176;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.registration {
+    font-size: 0.85rem;
+    color: #435176;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    header {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        max-width: 320px;
+    }
+
+    main {
+        padding: 30px 25px;
+    }
+
+    .tagline {
+        font-size: 1.75rem;
+    }
+
+    .counties {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+    .logo {
+        max-width: 260px;
+    }
+
+    main {
+        padding: 25px 20px;
+    }
+
+    section {
+        margin-bottom: 25px;
+    }
+
+    .highlight {
+        margin-bottom: 25px;
+    }
+
+    .tagline {
+        font-size: 1.4rem;
+    }
+
+    .service-area h2 {
+        font-size: 1rem;
+    }
+
+    .counties {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .counties li {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .about p {
+        font-size: 0.95rem;
+    }
+
+    .contact {
+        padding-top: 20px;
+    }
+
+    .contact h2 {
+        font-size: 1.15rem;
+    }
+
+    .contact p {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    .registration {
+        font-size: 0.8rem;
+    }
+}
