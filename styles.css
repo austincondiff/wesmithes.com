@@ -64,27 +64,32 @@ section:last-child {
     border-bottom: 1px solid #E5E6EA;
 }
 
-.service-area h2 {
-    font-size: 1.1rem;
+.service-area-text {
+    font-size: 1.05rem;
     color: #435176;
-    margin-bottom: 15px;
-    font-weight: 500;
     text-align: center;
 }
 
-.counties {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 10px;
-    list-style: none;
+.map-container {
+    margin-top: 20px;
+    height: 380px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #E5E6EA;
 }
 
-.counties li {
-    background: #E5E6EA;
-    padding: 12px 16px;
-    text-align: center;
-    border-left: 3px solid #9B865D;
-    font-weight: 500;
+.map-container a[href],
+.map-container .gmnoprint,
+.map-container .gm-style-cc,
+.map-container .gm-style a[title="Open this area in Google Maps (opens a new window)"] {
+    display: none !important;
+}
+
+.map-marker-label {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-top: 6px;
 }
 
 .about p {
@@ -120,6 +125,66 @@ section:last-child {
     text-decoration: underline;
 }
 
+.contact-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #E5E6EA;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: #435176;
+    background: #fff;
+    transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #9B865D;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #9B865D;
+    color: #fff;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.contact-form button:hover {
+    background: #435176;
+}
+
+.contact-form button:disabled {
+    background: #c4b99a;
+    cursor: default;
+}
+
+.form-status:empty {
+    display: none;
+}
+
+.form-status {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
 footer {
     margin-top: 40px;
     text-align: center;
@@ -150,10 +215,6 @@ footer {
 
     .tagline {
         font-size: 1.75rem;
-    }
-
-    .counties {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     .about p {
@@ -193,20 +254,6 @@ footer {
 
     .tagline {
         font-size: 1.4rem;
-    }
-
-    .service-area h2 {
-        font-size: 1rem;
-    }
-
-    .counties {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-
-    .counties li {
-        padding: 10px 12px;
-        font-size: 0.95rem;
     }
 
     .about p {
